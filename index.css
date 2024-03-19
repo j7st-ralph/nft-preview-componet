@@ -1,0 +1,165 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body, h1, h2, h3, h4, p,
+figure, blockquote, dl, dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1, h2, h3, h4,
+button, input, label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1, h2,
+h3, h4 {
+  text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input, button,
+textarea, select {
+  font: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
+
+/* my styles */
+
+.colors{
+    color: hsl(215, 51%, 70%);
+    color: hsl(178, 100%, 50%);
+    color: hsl(217, 54%, 11%);
+    color: hsl(216, 50%, 16%);
+    color: hsl(215, 32%, 27%);
+    color: hsl(0, 0%, 100%);
+}
+
+main{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(217, 54%, 11%);
+}
+
+.card{
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    background-color: hsl(216, 50%, 16%);
+    font-family: "Outfit", sans-serif;
+    font-style: normal;
+    color: hsl(215, 51%, 70%);
+}
+
+.image{
+    height: 300px;
+    width: 300px;
+    border-radius: 8px;
+}
+
+h1{
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: hsl(0, 0%, 100%);
+}
+
+.eth-icon{
+    display: flex;
+    color: hsl(178, 100%, 50%);
+    gap: 3px;
+}
+
+.clock{
+    display: flex;
+    gap: 3px;
+}
+.clock img{
+    width: 20px;
+}
+
+
+.eth{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    border-bottom: 1px solid hsl(215, 32%, 27%);
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+}
+
+h2{
+    font-weight: 500;
+    margin-top: 6px;
+}
+
+.avatar{
+    display: flex;
+    gap: 10px;
+    font-size: 0.6rem;
+}
+
+.avatar-img{
+    height: 30px;
+    width: 30px;
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 100px;
+}
+
+hr{
+    color: hsl(215, 32%, 27%);
+}
+
+span{
+    color: hsl(0, 0%, 100%);
+}
